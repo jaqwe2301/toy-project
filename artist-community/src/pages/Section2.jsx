@@ -35,7 +35,7 @@ const Section2 = () => {
         <img src={tray} width={"30px"} style={{ marginLeft: "10px" }} />
       </div>
 
-      <Userfeed></Userfeed>
+      <Userfeed />
     </div>
   );
 };
