@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, createContext } from "react";
 import axios from "axios";
 import URL from "../config";
 
@@ -65,7 +65,7 @@ function User({ user }) {
   );
 }
 
-function Userfeed() {
+function Userfeed({ num }) {
   const [users, setUsers] = useState([
     { content: "", like: false, pub_date: new Date(), user: 3 },
   ]);
@@ -85,7 +85,7 @@ function Userfeed() {
       .catch((error) => {
         console.log(error);
       });
-  }, []);
+  }, [num]);
 
   // const users = [
   //   {

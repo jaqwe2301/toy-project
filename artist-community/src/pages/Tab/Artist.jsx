@@ -67,7 +67,7 @@ function Artist() {
           })}
         </div>
 
-        <Box2 className="Box"></Box2>
+        <Box2 className="Box" />
       </div>
     </>
   );
